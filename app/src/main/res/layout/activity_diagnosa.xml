@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DiagnosaActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!--carousel-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp">
+            <!--carousel-->
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/v_fliper"
+                android:layout_centerHorizontal="true"
+                android:elevation="4dp"
+                />
+            <!--end carousel-->
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama :"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Masukan nama"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Usia :"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/usia"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="2"
+            android:inputType="number"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Masukan usia" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Tahun"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin :"
+            android:layout_marginTop="10dp"/>
+<!--        <EditText-->
+<!--            android:id="@+id/jenkel"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:maxLength="1"-->
+<!--            android:digits="LP"-->
+<!--            android:inputType="text"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            android:hint="Pilih (L/P)" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/jenkel">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbLaki"
+                android:text="Laki-laki"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/rbPerempuan"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"/>
+        </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isi Gejala Berikut"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <!--list gejala-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g01"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Ruam menonjol mengeluarkan cairan" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g02"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit Kering dan bersisik" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g03"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit mengerut" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g04"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit di sekitar mata tampak gelap" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g05"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit terkelupas dan berdarah" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g06"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Gatal pada lipatan tubuh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g07"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit melepuh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g08"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kemerahan pada kulit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g09"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit pada spot tampak gelap" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g10"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit terasa perih" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g11"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Gatal terasa parah" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g12"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Sensitif terhadap cahaya matahari" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g13"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit pecah-pecah" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g14"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Bengkak pada spot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g15"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit terasa kencang" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g16"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit Terasa gatal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g17"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Badan terasa demam" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g18"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Sakit kepala" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g19"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Badan menjadi lelah" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g20"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kesemutan pada spot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g21"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Kulit terkena zat kimia tertentu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g22"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Alergi terhadap makanan tertentu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bcprofillist">
+        <CheckBox
+            android:id="@+id/g23"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked123"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Luka terbuka dan berkerak" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cek Diagnosa"
+            android:background="@color/colorPrimary"
+            android:textSize="17sp"
+            android:layout_marginTop="13dp"
+            />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAMA PENYAKIT"
+            android:textAlignment="center"
+            android:layout_marginTop="13dp"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pertanyaan"
+        android:layout_width="419dp"
+        android:layout_height="17dp"
+        android:text="TextView"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_rdassesment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rd_ya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="Ya"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="73dp" />
+
+        <RadioButton
+            android:id="@+id/rd_tidak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak"
+            tools:layout_editor_absoluteX="253dp"
+            tools:layout_editor_absoluteY="75dp" />
+    </RadioGroup>
+
+</LinearLayout>

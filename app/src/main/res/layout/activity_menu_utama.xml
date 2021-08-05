@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menuUtamaActivity">
+    <!--    pembungkus utama-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--        pembungkus carousel-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp">
+            <!--carousel-->
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/v_fliper"
+                android:layout_centerHorizontal="true"
+                android:elevation="4dp"
+                />
+            <!--end carousel-->
+        </RelativeLayout>
+        <!--        end pembungkus carousel-->
+
+        <!--        pilihan menu-->
+        <!--menu edukasi-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:id="@+id/id_regitrasi"
+                >
+                <ImageView
+                    android:id="@+id/imgEdukasi"
+
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/textRegistrasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@+id/imgEdukasi"
+                    android:text="Registrasi"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/deskripsiRegistrasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@+id/imgEdukasi"
+                    android:layout_below="@+id/textRegistrasi"
+                    android:text="Penjelasan mengenai dermatitis, pencegahan dan cara pengobatan."/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <!--end menu edukasi-->
+
+        <!--menu diagnosa-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:id="@+id/id_diagnosa"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageView
+
+                    android:id="@+id/imgDiagnosa"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/textHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@+id/imgDiagnosa"
+                    android:text="History"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/deskripsiHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@+id/imgDiagnosa"
+                    android:layout_below="@+id/textHistory"
+                    android:text="Cek gejala penyakit gatal yang anda derita secara mandiri dan ketahui jenis dermatitis apa yang anda derita"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <!--end menu diagnosa-->
+
+        <!--menu profil-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:id="@+id/id_profil"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageView
+                    android:id="@+id/imgProfil"
+                    android:src="@drawable/profill"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/textProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@+id/imgProfil"
+                    android:text="Profil Pengembang"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/deskripsiProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@+id/imgProfil"
+                    android:layout_below="@+id/textProfil"
+                    android:text="Data diri mahasiswa"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <!--end menu profil-->
+
+    </LinearLayout>
+
+
+</ScrollView>

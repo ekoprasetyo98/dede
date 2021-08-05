@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".dashboardActivity">
+
+    <!--    pembungkus utama-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="13dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#FBC687"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:id="@+id/edukasiAlergi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/three"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="85dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Dermatitis kontak alergi"
+                    android:textSize="21dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Materi Education"
+            android:textSize="18dp"
+            android:layout_marginTop="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="13dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="cFOsDlIa3r4"
+                android:id="@+id/id"
+                app:autoPlay="true"
+                app:showFullScreenButton="false"
+                />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alertPenjelasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group1"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penjelasan"
+                android:textSize="18dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="38dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alertGejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group2"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gejala - gejala"
+                android:textSize="18dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="38dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alertPencegahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group3"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pencegahan"
+                android:textSize="18dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="38dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alertPengobatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group4"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penanganan dan pengobatan"
+                android:textSize="18dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="38dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--    end pembungkus utama-->
+</ScrollView>

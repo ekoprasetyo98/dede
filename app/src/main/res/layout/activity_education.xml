@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".dashboardActivity">
+
+    <!--    pembungkus utama-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textSize="18dp"/>
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:id="@+id/id_diagnosa"
+            android:layout_marginTop="13dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="85dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Cek diri kamu sekarang!"
+                    android:textSize="21dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--        pilihan menu-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:text="Materi education"
+            android:textSize="18dp"/>
+
+        <!--menu edukasi-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#FF7171"
+            android:layout_marginBottom="13dp">
+            <LinearLayout
+                android:id="@+id/edukasiAtopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/one"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="85dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Dermatitis atopic"
+                    android:textSize="21dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!--end menu edukasi-->
+
+        <!--menu diagnosa-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#949CDF"
+            android:layout_marginBottom="13dp">
+            <LinearLayout
+                android:id="@+id/edukasiKontak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/two"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="85dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Dermatitis kontak iritan"
+                    android:textSize="21dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!--end menu diagnosa-->
+
+        <!--menu profil-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#FBC687"
+            android:layout_marginBottom="13dp">
+            <LinearLayout
+                android:id="@+id/edukasiAlergi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/three"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="85dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Dermatitis kontak alergi"
+                    android:textSize="21dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#4158d0"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:id="@+id/edukasiNeuro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/four"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="85dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Neurodermatitis"
+                    android:textSize="21dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!--end menu profil-->
+
+
+    </LinearLayout>
+    <!--    end pembungkus utama-->
+</ScrollView>
