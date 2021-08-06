@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class dashboardActivity extends AppCompatActivity {
     private RelativeLayout profil;
     private RelativeLayout education;
     private RelativeLayout history;
+    Button cek;
     private  static final int TIME_INTERVAL = 2000;
     private long mBackPressed;
 
@@ -45,6 +47,7 @@ public class dashboardActivity extends AppCompatActivity {
 
 
         diagnosa = findViewById(R.id.id_diagnosa);
+        cek = findViewById(R.id.deskripsicek);
         profil = findViewById(R.id.id_profil);
         education = findViewById(R.id.edukasi);
         history = findViewById(R.id.id_history);
@@ -58,6 +61,14 @@ public class dashboardActivity extends AppCompatActivity {
                 startActivity(intent);
 
 
+            }
+        });
+
+        cek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(dashboardActivity.this, DiagnosaActivity.class);
+                startActivity(intent);
             }
         });
 
