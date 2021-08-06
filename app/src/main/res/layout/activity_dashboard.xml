@@ -68,7 +68,7 @@
 
                     <ImageView
                         android:id="@+id/imgcek"
-                        android:src="@drawable/cek"
+                        android:src="@drawable/cekk"
                         android:layout_width="88dp"
                         android:layout_height="108dp"
                         android:layout_marginLeft="29dp"
