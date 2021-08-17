@@ -491,6 +491,54 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/bcprofillist">
+            <CheckBox
+                android:id="@+id/g24"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked123"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Gatal saat stres atau cemas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/bcprofillist">
+            <CheckBox
+                android:id="@+id/g25"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked123"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Gatal saat sedang tidak beraktifitas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/bcprofillist">
+            <CheckBox
+                android:id="@+id/g26"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked123"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Gatal dan bercak pada bagian kepala" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
 

@@ -31,7 +31,7 @@ public class DiagnosaActivity extends AppCompatActivity {
     /*set awal variabel layout*/
     ViewFlipper viewFlipper;
     CheckBox g01, g02, g03, g04, g05, g06,
-    g07, g08, g09, g10, g11, g12, g13, g14,g15,g16,g17,g18,g19,g20,g21,g22,g23;
+    g07, g08, g09, g10, g11, g12, g13, g14,g15,g16,g17,g18,g19,g20,g21,g22,g23,g24,g25,g26;
     Button prosess;
     ImageView imageAlert;
     EditText edNama, edUsia, edJenkel;
@@ -39,11 +39,11 @@ public class DiagnosaActivity extends AppCompatActivity {
     RadioGroup radioGroupJK;
 
     /*memberi type float pada masing" fakta dari user(CFuser) dan pakar (CFpakar)*/
-    double CFpakar1, CFpakar2,CFpakar3,CFpakar4,CFpakar5,CFpakar6,CFpakar7,CFpakar8,CFpakar9,CFpakar10,CFpakar11,CFpakar12,CFpakar13,CFpakar14,CFpakar15,CFpakar16,CFpakar17,CFpakar18,CFpakar19,CFpakar20,CFpakar21,CFpakar22,CFpakar23;
+    double CFpakar1, CFpakar2,CFpakar3,CFpakar4,CFpakar5,CFpakar6,CFpakar7,CFpakar8,CFpakar9,CFpakar10,CFpakar11,CFpakar12,CFpakar13,CFpakar14,CFpakar15,CFpakar16,CFpakar17,CFpakar18,CFpakar19,CFpakar20,CFpakar21,CFpakar22,CFpakar23,CFpakar24,CFpakar25,CFpakar26;
     double CFuser1, CFuser2,CFuser3,CFuser4,CFuser5,CFuser6,CFuser7,CFuser8,CFuser9,CFuser10,CFuser11,CFuser12,CFuser13,CFuser14,CFuser15,CFuser16,CFuser17,CFuser18,CFuser19,CFuser20,CFuser21,CFuser22,CFuser23;
 
     /*memberi type float pada fakta atau gejala*/
-    double CFfakta1,CFfakta2,CFfakta3,CFfakta4,CFfakta5,CFfakta6,CFfakta7,CFfakta8,CFfakta9,CFfakta10,CFfakta11,CFfakta12,CFfakta13,CFfakta14,CFfakta15,CFfakta16,CFfakta17,CFfakta18,CFfakta19,CFfakta20,CFfakta21,CFfakta22,CFfakta23;
+    double CFfakta1,CFfakta2,CFfakta3,CFfakta4,CFfakta5,CFfakta6,CFfakta7,CFfakta8,CFfakta9,CFfakta10,CFfakta11,CFfakta12,CFfakta13,CFfakta14,CFfakta15,CFfakta16,CFfakta17,CFfakta18,CFfakta19,CFfakta20,CFfakta21,CFfakta22,CFfakta23,CFfakta24,CFfakta25,CFfakta26;
 
     /*memberi type float pada total*/
     double CFtotal1,CFtotal2,CFtotal3,CFtotal4,CFtotal5,CFtotal6,CFtotal7;
@@ -101,6 +101,9 @@ public class DiagnosaActivity extends AppCompatActivity {
         g21 = (CheckBox)findViewById(R.id.g21);
         g22 = (CheckBox)findViewById(R.id.g22);
         g23 = (CheckBox)findViewById(R.id.g23);
+        g24 = (CheckBox)findViewById(R.id.g24);
+        g25 = (CheckBox)findViewById(R.id.g25);
+        g26 = (CheckBox)findViewById(R.id.g26);
 
         radioGroupJK = findViewById(R.id.jenkel);
 
@@ -171,13 +174,16 @@ public class DiagnosaActivity extends AppCompatActivity {
                 CFfakta14=0;
                 CFfakta15=0;
                 CFfakta16=0;
-                    CFfakta17=0;
-                    CFfakta18=0;
-                    CFfakta19=0;
-                    CFfakta20=0;
-                    CFfakta21=0;
-                    CFfakta22=0;
-                    CFfakta23=0;
+                CFfakta17=0;
+                CFfakta18=0;
+                CFfakta19=0;
+                CFfakta20=0;
+                CFfakta21=0;
+                CFfakta22=0;
+                CFfakta23=0;
+                CFfakta24=0;
+                CFfakta25=0;
+                CFfakta26=0;
 
                 // COMBINASI
                 CFtotal1=0;
@@ -448,6 +454,36 @@ public class DiagnosaActivity extends AppCompatActivity {
                     kosong();
                 }
 
+                CFpakar24 = 0;
+
+                if (g24.isChecked()){
+                    CFpakar24 = CFpakar24+0.7;
+                    CFfakta24 = CFpakar24*0.4;
+
+                }else{
+                    kosong();
+                }
+
+                CFpakar25 = 0;
+
+                if (g25.isChecked()){
+                    CFpakar25 = CFpakar25+0.3;
+                    CFfakta25 = CFpakar25*0.4;
+
+                }else{
+                    kosong();
+                }
+
+                CFpakar26 = 0;
+
+                if (g26.isChecked()){
+                    CFpakar26 = CFpakar26+0.7;
+                    CFfakta26 = CFpakar26*0.8;
+
+                }else{
+                    kosong();
+                }
+
 
 
 
@@ -501,10 +537,12 @@ public class DiagnosaActivity extends AppCompatActivity {
 //                neurodermatitis
 //                gejala 1,6,9,10
                 CFtotal1 = CFfakta1 + CFfakta2 * (1 - CFfakta1);
-                CFtotal2 = CFtotal1 + CFfakta6 * (1-CFtotal1);
-                CFtotal3 = CFtotal2 + CFfakta8 * (1-CFtotal2);
-                CFtotal4 = CFtotal3 + CFfakta10 * (1-CFtotal3);
-                CFneuro = CFtotal4 *100;
+                CFtotal2 = CFtotal1 + CFfakta8 * (1-CFtotal1);
+                CFtotal3 = CFtotal2 + CFfakta16 * (1-CFtotal2);
+                CFtotal4 = CFtotal3 + CFfakta24 * (1-CFtotal3);
+                CFtotal5 = CFtotal4 + CFfakta25 * (1-CFtotal4);
+                CFtotal6 = CFtotal5 + CFfakta26 * (1-CFtotal5);
+                CFneuro = CFtotal6 *100;
 
                 /*rule saran mengikuti nilai dari yang terbesar*/
                 String saran = "Saran : ";
@@ -646,6 +684,9 @@ public class DiagnosaActivity extends AppCompatActivity {
         g21.setChecked(false);
         g22.setChecked(false);
         g23.setChecked(false);
+        g24.setChecked(false);
+        g25.setChecked(false);
+        g26.setChecked(false);
 
 
     }
@@ -674,6 +715,9 @@ public class DiagnosaActivity extends AppCompatActivity {
         CFpakar21=0;
         CFpakar22=0;
         CFpakar23=0;
+        CFpakar24=0;
+        CFpakar25=0;
+        CFpakar26=0;
 
     }
 
