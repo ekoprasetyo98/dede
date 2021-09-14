@@ -203,7 +203,6 @@ public class DiagnosaActivity extends AppCompatActivity {
 
                 /*proses logika backward chaining IF THEN ELSE*/
                 CFpakar1 = 0;
-                CFuser1 = 0;
                 if (g01.isChecked()){
                     CFpakar1 = CFpakar1+0.3;
                     CFfakta1 = CFpakar1*0.2;
@@ -213,8 +212,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar2 = 0;
-                CFuser2 = 0;
-
                 if (g02.isChecked()){
                     CFpakar2 = CFpakar2+0.3;
                     CFfakta2 = CFpakar2*0.6;
@@ -224,8 +221,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar3 = 0;
-                CFuser3 = 0;
-
                 if (g03.isChecked()){
                     CFpakar3 = CFpakar3+0.5;
                     CFfakta3 = CFpakar3*0.2;
@@ -235,8 +230,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar4 = 0;
-                CFuser4 = 0;
-
                 if (g04.isChecked()){
                     CFpakar4 = CFpakar4+0.5;
                     CFfakta4 = CFpakar4*0.4;
@@ -246,8 +239,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar5 = 0;
-                CFuser5 = 0;
-
                 if (g05.isChecked()){
                     CFpakar5 = CFpakar5+0.5;
                     CFfakta5 = CFpakar5*0.6;
@@ -257,8 +248,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar6 = 0;
-                CFuser6 = 0;
-
                 if (g06.isChecked()){
                     CFpakar6 = CFpakar6+0.7;
                     CFfakta6 = CFpakar6*0.8;
@@ -268,8 +257,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar7 = 0;
-                CFuser7 = 0;
-
                 if (g07.isChecked()){
                     CFpakar7 = CFpakar7+0.3;
                     CFfakta7 = CFpakar7*0.4;
@@ -279,8 +266,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar8 = 0;
-                CFuser8 = 0;
-
                 if (g08.isChecked()){
                     CFpakar8 = CFpakar8+0.3;
                     CFfakta8 = CFpakar8*0.6;
@@ -290,8 +275,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar9 = 0;
-                CFuser9 = 0;
-
                 if (g09.isChecked()){
                     CFpakar9 = CFpakar9+0.7;
                     CFfakta9 = CFpakar9*0.8;
@@ -301,8 +284,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar10 = 0;
-                CFuser10 = 0;
-
                 if (g10.isChecked()){
                     CFpakar10 = CFpakar10+0.5;
                     CFfakta10 = CFpakar10*0.4;
@@ -312,8 +293,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar11 = 0;
-                CFuser11 = 0;
-
                 if (g11.isChecked()){
                     CFpakar11 = CFpakar11+0.7;
                     CFfakta2 = CFpakar11*0.4;
@@ -323,8 +302,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar12 = 0;
-                CFuser12 = 0;
-
                 if (g12.isChecked()){
                     CFpakar12 = CFpakar12+0.7;
                     CFfakta12 = CFpakar12*0.4;
@@ -334,8 +311,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar13 = 0;
-                CFuser13 = 0;
-
                 if (g13.isChecked()){
                     CFpakar13 = CFpakar13+0.3;
                     CFfakta13 = CFpakar13*0.4;
@@ -345,8 +320,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar14 = 0;
-                CFuser14 = 0;
-
                 if (g14.isChecked()){
                     CFpakar14 = CFpakar14+0.7;
                     CFfakta14 = CFpakar14*0.4;
@@ -356,8 +329,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar15 = 0;
-                CFuser15 = 0;
-
                 if (g15.isChecked()){
                     CFpakar15 = CFpakar15+0.5;
                     CFfakta15 = CFpakar15*0.6;
@@ -367,8 +338,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar16 = 0;
-                CFuser16 = 0;
-
                 if (g16.isChecked()){
                     CFpakar16 = CFpakar16+0.3;
                     CFfakta16 = CFpakar16*0.4;
@@ -378,8 +347,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar17 = 0;
-                CFuser17 = 0;
-
                 if (g17.isChecked()){
                     CFpakar17 = CFpakar17+0.7;
                     CFfakta17 = CFpakar17*0.6;
@@ -389,8 +356,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar18 = 0;
-                CFuser18 = 0;
-
                 if (g18.isChecked()){
                     CFpakar18 = CFpakar18+0.7;
                     CFfakta18 = CFpakar18*0.6;
@@ -400,8 +365,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar19 = 0;
-                CFuser19 = 0;
-
                 if (g19.isChecked()){
                     CFpakar19 = CFpakar19+0.3;
                     CFfakta19 = CFpakar19*0.4;
@@ -411,8 +374,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar20 = 0;
-                CFuser20 = 0;
-
                 if (g20.isChecked()){
                     CFpakar20 = CFpakar20+0.2;
                     CFfakta20 = CFpakar20*0.5;
@@ -422,8 +383,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar21 = 0;
-                CFuser21 = 0;
-
                 if (g21.isChecked()){
                     CFpakar21 = CFpakar21+0.7;
                     CFfakta21 = CFpakar21*0.4;
@@ -433,8 +392,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar22 = 0;
-                CFuser22 = 0;
-
                 if (g22.isChecked()){
                     CFpakar22 = CFpakar22+0.3;
                     CFfakta22 = CFpakar22*0.4;
@@ -444,8 +401,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar23 = 0;
-                CFuser23 = 0;
-
                 if (g23.isChecked()){
                     CFpakar23 = CFpakar23+0.7;
                     CFfakta23 = CFpakar23*0.6;
@@ -455,7 +410,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar24 = 0;
-
                 if (g24.isChecked()){
                     CFpakar24 = CFpakar24+0.7;
                     CFfakta24 = CFpakar24*0.4;
@@ -465,7 +419,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar25 = 0;
-
                 if (g25.isChecked()){
                     CFpakar25 = CFpakar25+0.3;
                     CFfakta25 = CFpakar25*0.4;
@@ -475,7 +428,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }
 
                 CFpakar26 = 0;
-
                 if (g26.isChecked()){
                     CFpakar26 = CFpakar26+0.7;
                     CFfakta26 = CFpakar26*0.8;
@@ -483,9 +435,6 @@ public class DiagnosaActivity extends AppCompatActivity {
                 }else{
                     kosong();
                 }
-
-
-
 
 
                 /*perhitungan certainty faktor*/
@@ -501,7 +450,7 @@ public class DiagnosaActivity extends AppCompatActivity {
                 CFtotal3 = CFtotal2 + CFfakta4 * (1-CFtotal2);
                 CFtotal4 = CFtotal3 + CFfakta5 * (1-CFtotal3);
                 CFtotal5 = CFtotal4 + CFfakta6 * (1-CFtotal4);
-                CFtotal6 = CFtotal5 + CFfakta7 * (1-CFtotal5);
+                CFtotal6 = CFtotal5 + CFfakta13 * (1-CFtotal5);
                 CFatopic = CFtotal6 * 100;
 
 //                dermatitis alergi
@@ -535,14 +484,13 @@ public class DiagnosaActivity extends AppCompatActivity {
                 CFherves = CFtotal6*100;
 
 //                neurodermatitis
-//                gejala 1,6,9,10
+//                gejala 1,2,16,24,25,26
                 CFtotal1 = CFfakta1 + CFfakta2 * (1 - CFfakta1);
-                CFtotal2 = CFtotal1 + CFfakta8 * (1-CFtotal1);
-                CFtotal3 = CFtotal2 + CFfakta16 * (1-CFtotal2);
-                CFtotal4 = CFtotal3 + CFfakta24 * (1-CFtotal3);
-                CFtotal5 = CFtotal4 + CFfakta25 * (1-CFtotal4);
-                CFtotal6 = CFtotal5 + CFfakta26 * (1-CFtotal5);
-                CFneuro = CFtotal6 *100;
+                CFtotal2 = CFtotal1 + CFfakta16 * (1-CFtotal1);
+                CFtotal3 = CFtotal2 + CFfakta24 * (1-CFtotal2);
+                CFtotal4 = CFtotal3 + CFfakta25 * (1-CFtotal3);
+                CFtotal5 = CFtotal4 + CFfakta26 * (1-CFtotal4);
+                CFneuro = CFtotal5 *100;
 
                 /*rule saran mengikuti nilai dari yang terbesar*/
                 String saran = "Saran : ";
